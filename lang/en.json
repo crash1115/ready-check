@@ -1,0 +1,10 @@
+{
+  "READYCHECK.DialogTitle": "Ready Check",
+  "READYCHECK.DialogContent": "Are you ready?",
+  "READYCHECK.DialogButtonReady": "Ready",
+  "READYCHECK.DialogButtonNotReady": "Not Ready",
+  "READYCHECK.PlayerReady": "Player is Ready",
+  "READYCHECK.PlayerNotReady": "Player is Not Ready",
+  "READYCHECK.UiChangeButton": "Change Ready Status",
+  "READYCHECK.UiCheckButton": "Initiate Ready Check"
+}

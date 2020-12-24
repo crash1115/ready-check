@@ -1,0 +1,18 @@
+#chat-controls .chat-control-icon.ready-check {
+  margin-right: 5px;
+}
+
+#players .ready-indicator {
+  flex: 0 0 8px;
+  margin-left: 8px;
+  padding-top: 4px;
+}
+
+
+#players .ready-indicator.ready {
+  color: lime;
+}
+
+#players .ready-indicator.not-ready {
+  color: red;
+}
