@@ -73,7 +73,7 @@ Hooks.on('renderPlayerList', async function(){
     }
 
     // Add the indicator to the end of the line
-    $("[data-user-id="+userId+"]").append(indicator);
+     $("#players").find("[data-user-id="+userId+"]").append(indicator);
   }
 })
 
