@@ -1,4 +1,4 @@
-Hooks.on('ready', async function(){
+Hooks.on('renderChatLog', async function(){
 
   if(game.user.isGM){
 
@@ -7,7 +7,7 @@ Hooks.on('ready', async function(){
 
     // Add button for GM
     let title = game.i18n.localize("READYCHECK.UiCheckButton");
-    const readyCheckBtn = $(`<a class="chat-control-icon ready-check" title="` + title + `"><i class="fas fa-hourglass-half"></i></a>`);
+    const readyCheckBtn = $(`<a class="ready-check" title="` + title + `"><i class="fas fa-hourglass-half"></i></a>`);
     jQuery(".chat-control-icon").before(readyCheckBtn);
 
     // Add event listener
@@ -22,7 +22,7 @@ Hooks.on('ready', async function(){
 
     // Add button for players
     let title = game.i18n.localize("READYCHECK.UiChangeButton");
-    const readyCheckBtn = $(`<a class="chat-control-icon ready-check" title="` + title + `"><i class="fas fa-hourglass-half"></i></a>`);
+    const readyCheckBtn = $(`<a class="ready-check" title="` + title + `"><i class="fas fa-hourglass-half"></i></a>`);
     jQuery(".chat-control-icon").before(readyCheckBtn);
 
     // Add event listener

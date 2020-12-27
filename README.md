@@ -23,10 +23,6 @@ You can use this toggle to help your GM see when you have to step away to take a
 - Should be compatible with all systems.
 - Might have issues with other modules that modify the players UI or the area around the chat interface.
 
-# Known Issues
-- Issues with display of ready check / status update button in WFRP (being fixed in 1.0.2)
-- Incompatible with Chat Autoloader
-
 # Installation
 ## Using The Manifest URL
 1. Open up Foundry
