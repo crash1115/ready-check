@@ -21,7 +21,7 @@ You can use this toggle to help your GM see when you have to step away to take a
 
 # Compatibility
 - Should be compatible with all systems.
-- Might have issues with other modules that modify the players UI. I've tested it with a few and it seems to work okay, but you never know.
+- Might have issues with other modules that modify the players UIor the area around the chat interface.
 
 # Installation
 ## Using The Manifest URL
