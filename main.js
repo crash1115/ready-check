@@ -1,4 +1,4 @@
-Hooks.on('ready', async function(){
+Hooks.on('renderChatLog', async function(){
 
   if(game.user.isGM){
 
