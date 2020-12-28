@@ -1,10 +1,30 @@
 {
-  "READYCHECK.DialogTitle": "Ready Check",
-  "READYCHECK.DialogContent": "Are you ready?",
-  "READYCHECK.DialogButtonReady": "Ready",
-  "READYCHECK.DialogButtonNotReady": "Not Ready",
+  "READYCHECK.ChatTextCheck": "is ready!",
+  "READYCHECK.ChatTextUserUpdate": "has updated their status to",
+
+  "READYCHECK.DialogContentReadyCheck": "Your GM has has intiated a Ready Check. Click the button below when you're ready to play!",
+  "READYCHECK.DialogContentStatusUpdate": "Please select an option below to update your ready status.",
+  "READYCHECK.DialogTitleReadyCheck": "Ready Check",
+  "READYCHECK.DialogTitleStatusUpdate": "Update Ready Status",
+
+  "READYCHECK.ErrorNotGM": "Only GMs may initiate ready checks.",
+
+  "READYCHECK.GmDialogTitle": "Ready Check GM Options",
+  "READYCHECK.GmDialogContent": "What action would you like to perform?",
+  "READYCHECK.GmDialogButtonCheck": "Start A Ready Check",
+  "READYCHECK.GmDialogButtonStatus": "Set My Ready Status",
+
   "READYCHECK.PlayerReady": "Player is Ready",
   "READYCHECK.PlayerNotReady": "Player is Not Ready",
+
+  "READYCHECK.SettingsChatMessagesForChecksTitle": "Display Ready Check Chat Messages",
+  "READYCHECK.SettingsChatMessagesForChecksHint": "Toggle this on to display a chat message when a player responds to a ready check.",
+  "READYCHECK.SettingsChatMessagesForUserUpdatesTitle": "Display User Update Chat Messages",
+  "READYCHECK.SettingsChatMessagesForUserUpdatesHint": "Toggle this on to display a chat message when a player changes their ready status while no ready check is active.",
+
+  "READYCHECK.StatusReady": "Ready",
+  "READYCHECK.StatusNotReady": "Not Ready",
+
   "READYCHECK.UiChangeButton": "Change Ready Status",
-  "READYCHECK.UiCheckButton": "Initiate Ready Check"
+  "READYCHECK.UiGmButton": "Initiate Ready Check or Change Ready Status"
 }
