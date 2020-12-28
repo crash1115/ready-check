@@ -3,7 +3,7 @@
 # About Ready Set Go!
 Ready Set Go! is a system agnostic module for Foundry VTT designed to help GM's and players communicate when they're ready to play. GM's are given the option to initiate ready checks, and both GM's and players can indicate that they're ready (or not) at any time.
 
-[![Image from Gyazo](https://i.gyazo.com/35a6623ca5d695035250f55e0eca2475.jpg)](https://gyazo.com/35a6623ca5d695035250f55e0eca2475)
+[![Image from Gyazo](https://i.gyazo.com/daca34d0b06c3de5371f487a27b4f6aa.jpg)](https://gyazo.com/daca34d0b06c3de5371f487a27b4f6aa)
 
 # Instructions
 
