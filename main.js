@@ -140,10 +140,21 @@ async function initReadyCheck(){
     await setAllToNotReady();
     game.socket.emit('module.ready-check', data);
     displayReadyCheckDialog();
+    playReadyCheckAlert();
   } else {
     ui.notifications.error(game.i18n.localize("READYCHECK.ErrorNotGM"));
   }
+}
 
+// PLAY SOUND EFFECT ASSOCIATED WITH READY CHECK START
+function playReadyCheckAlert(){
+  let playAlert = game.settings.get("ready-check", "playAlertForCheck");
+  let alertSound = game.settings.get("ready-check", "checkAlertSoundPath");
+  if(playAlert && !alertSound){
+    AudioHelper.play({src: "modules/ready-check/sounds/notification.mp3", volume: 1, autoplay: true, loop: false}, true);
+  }else if(playAlert && alertSound){
+    AudioHelper.play({src: alertSound, volume: 1, autoplay: true, loop: false}, true);
+  }
 }
 
 // PROCESS READY CHECK RESPONSE (GM)
@@ -174,6 +185,27 @@ function registerGameSettings(){
     default: false,
     type: Boolean
   });
+
+  game.settings.register("ready-check", "playAlertForCheck", {
+    name: game.i18n.localize("READYCHECK.SettingsPlayAlertForChecksTitle"),
+    hint: game.i18n.localize("READYCHECK.SettingsPlayAlertForChecksHint"),
+    scope: "world",
+    config: true,
+    default: false,
+    type: Boolean
+  });
+
+  game.settings.register("ready-check", "checkAlertSoundPath", {
+    name: game.i18n.localize("READYCHECK.SettingsCheckAlertSoundPathTitle"),
+    hint: game.i18n.localize("READYCHECK.SettingsCheckAlertSoundPathHint"),
+    scope: "world",
+    config: true,
+    default: 'modules/ready-check/sounds/notification.mp3',
+    type: String
+  });
+
+
+
 }
 
 // SET ALL USERS STATUS TO NOT READY (GM)

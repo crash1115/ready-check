@@ -22,6 +22,12 @@
   "READYCHECK.SettingsChatMessagesForUserUpdatesTitle": "Display User Update Chat Messages",
   "READYCHECK.SettingsChatMessagesForUserUpdatesHint": "Toggle this on to display a chat message when a player changes their ready status while no ready check is active.",
 
+  "READYCHECK.SettingsPlayAlertForChecksTitle": "Play Alert When Ready Check Starts",
+  "READYCHECK.SettingsPlayAlertForChecksHint": "Toggle this on to play a sound when a ready check is started.",
+
+  "READYCHECK.SettingsCheckAlertSoundPathTitle": "Ready Check Alert Sound Path",
+  "READYCHECK.SettingsCheckAlertSoundPathHint": "Enter the path of the sound to play when a ready check is started. Leaving this blank will play the default ring sound.",
+
   "READYCHECK.StatusReady": "Ready",
   "READYCHECK.StatusNotReady": "Not Ready",
 
