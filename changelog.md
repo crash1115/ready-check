@@ -1,3 +1,7 @@
+# Version 1.2.0
+- Added an optional setting to play a sound when the ready check is initiated. This is off by default.
+- Added a setting to customize the sound that gets played when a ready check is initiated.
+
 # Version 1.1.0
 - Added a pair of settings to allow the display of chat messages when a user toggles their ready status or when they respond to a ready check
 - Allowed GMs to toggle their own ready status
