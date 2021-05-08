@@ -2,11 +2,11 @@
 	"name": "ready-check",
 	"title": "Ready Set Go!",
 	"description": "Allows the GM to initiate a ready check, displaying a dialog on each player's screen that prompts them to indicate when they're ready. Also gives players the ability to change their ready status at any time via a button near the chat input.",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"author": "CRASH1115#2944",
-	"minimumCoreVersion": "0.6.6",
-	"compatibleCoreVersion": "0.7.9",
-	"esmodules": ["main.js"],
+	"minimumCoreVersion": "0.8.2",
+	"compatibleCoreVersion": "0.8.2",
+	"esmodules": ["ready-check.js"],
 	"styles": ["styles/ready-check.css"],
 	"languages": [
 		{
@@ -18,5 +18,19 @@
 	"socket": true,
 	"url": "https://github.com/crash1115/ready-check",
   "manifest": "https://raw.githubusercontent.com/crash1115/ready-check/main/module.json",
-	"download": "https://github.com/crash1115/ready-check/releases/download/v1.2.0/ready-check.zip"
+	"download": "https://github.com/crash1115/ready-check/releases/download/v1.2.1/ready-check.zip",
+	"readme": "https://github.com//crash1115/ready-check/blob/master/README.md",
+	"bugs": "https://github.com/crash1115/ready-check/issues",
+  "allowBugReporter": true,
+	"manifestPlusVersion": "1.1.0",
+  "media": [
+		{
+			"type": "icon",
+			"link": "https://i.gyazo.com/c6703b13bbcdb5b222a2f758e58f95f1.png"
+		},
+    {
+      "type": "cover",
+      "link": "https://i.gyazo.com/0503a3e66e250a0d775be7d21bcc47f6.png"
+    }
+  ]
 }

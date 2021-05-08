@@ -2,7 +2,7 @@
   "READYCHECK.ChatTextCheck": "is ready!",
   "READYCHECK.ChatTextUserUpdate": "has updated their status to",
 
-  "READYCHECK.DialogContentReadyCheck": "Your GM has has intiated a Ready Check. Click the button below when you're ready to play!",
+  "READYCHECK.DialogContentReadyCheck": "Your GM has has initiated a Ready Check. Click the button below when you're ready to play!",
   "READYCHECK.DialogContentStatusUpdate": "Please select an option below to update your ready status.",
   "READYCHECK.DialogTitleReadyCheck": "Ready Check",
   "READYCHECK.DialogTitleStatusUpdate": "Update Ready Status",
