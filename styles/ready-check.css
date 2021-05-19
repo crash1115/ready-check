@@ -1,8 +1,10 @@
-#sidebar .sidebar-tab #chat-controls .ready-check {
+#sidebar .sidebar-tab #chat-controls .crash-ready-check-sidebar,
+#chat-popout #chat-controls .crash-ready-check-popout {
   flex: 0;
 }
 
-#sidebar .sidebar-tab #chat-controls .ready-check i {
+#sidebar .sidebar-tab #chat-controls .crash-ready-check-sidebar i,
+#chat-popout #chat-controls .crash-ready-check-popout i {
   width: unset;
   height: unset;
   margin-right: 5px;
@@ -10,16 +12,17 @@
   background: none;
 }
 
-#players #player-list .player .ready-indicator {
+
+#players #player-list .player .crash-ready-indicator {
   flex: 0 0 8px;
   margin-left: 8px;
   padding-top: 4px;
 }
 
-#players #player-list .player .ready-indicator.ready {
+#players #player-list .player .crash-ready-indicator.ready {
   color: lime;
 }
 
-#players #player-list .player .ready-indicator.not-ready {
+#players #player-list .player .crash-ready-indicator.not-ready {
   color: red;
 }

@@ -1,3 +1,8 @@
+# Version 1.2.2
+- Fixed an issue where the UI button would duplicate when popping out the chat tab
+- Style tweaks
+- Temporarily removed Bug Reporter and Manifest+ support until Manifest+ has been re-specced to live in flags.
+
 # Version 1.2.1 (Foundry 0.8.x)
 - Compatibility update for Foundry 0.8.2. This version will not work with Foundry 0.7.x. Previous versions remain compatible with Foundry 0.7.x.
 - Option to start a ready check is no longer displayed for users with the Assistant GM role, as this role does not have the ability to update Users.
