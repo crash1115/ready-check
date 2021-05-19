@@ -1,6 +1,6 @@
 {
 	"name": "ready-check",
-	"title": "Ready Set Go!",
+	"title": "Ready Set Go! - A Ready Check Module",
 	"description": "Allows the GM to initiate a ready check, displaying a dialog on each player's screen that prompts them to indicate when they're ready. Also gives players the ability to change their ready status at any time via a button near the chat input.",
 	"version": "1.2.2",
 	"author": "CRASH1115#2944",
