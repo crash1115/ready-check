@@ -64,23 +64,37 @@ async function setAllToNotReady(){
 
 // CREATE THE UI BUTTON FOR THE GM AND PLAYERS
 function createButtons(){
-  if(game.user.role === 4){ //check for GM role, not Asst GM
-    let checkBtnTitle = game.i18n.localize("READYCHECK.UiGmButton");
-    const checkBtn = $(`<a class="ready-check" title="` + checkBtnTitle + `"><i class="fas fa-hourglass-half"></i></a>`);
-    jQuery(".chat-control-icon").before(checkBtn);
-    jQuery(".ready-check").click(async (event) => {
+  let btnTitle = game.i18n.localize("READYCHECK.UiChangeButton");
+
+  if(game.user.role === 4){ //if GM
+    btnTitle = game.i18n.localize("READYCHECK.UiGmButton");
+  }
+
+  const sidebarBtn = $(`<a class="crash-ready-check-sidebar" title="` + btnTitle + `"><i class="fas fa-hourglass-half"></i></a>`);
+  const popoutBtn = $(`<a class="crash-ready-check-popout" title="` + btnTitle + `"><i class="fas fa-hourglass-half"></i></a>`);
+  let sidebarDiv = $("#sidebar").find(".chat-control-icon");
+  let popoutDiv = $("#chat-popout").find(".chat-control-icon");
+  let btnAlreadyInSidebar = $("#sidebar").find(".crash-ready-check-sidebar").length > 0;
+  let btnAlreadyInPopout = $("#chat-popout").find(".crash-ready-check-popout").length > 0;
+
+  if(!btnAlreadyInSidebar) {
+    sidebarDiv.before(sidebarBtn);
+    jQuery(".crash-ready-check-sidebar").click(async (event) => {
       event.preventDefault();
-      displayGmDialog();
-    });
-  } else {
-    let statusBtnTitle = game.i18n.localize("READYCHECK.UiChangeButton");
-    const statusBtn = $(`<a class="ready-check" title="` + statusBtnTitle + `"><i class="fas fa-hourglass-half"></i></a>`);
-    jQuery(".chat-control-icon").before(statusBtn);
-    jQuery(".ready-check").click(async (event) => {
-      event.preventDefault();
-      displayStatusUpdateDialog();
+      if(game.user.role === 4){ displayGmDialog(); }
+      else { displayStatusUpdateDialog(); }
     });
   }
+
+  if(!btnAlreadyInPopout) {
+    popoutDiv.before(popoutBtn);
+    jQuery(".crash-ready-check-popout").click(async (event) => {
+      event.preventDefault();
+      if(game.user.role === 4){ displayGmDialog(); }
+      else { displayStatusUpdateDialog(); }
+    });
+  }
+
 }
 
 // CREATE THE SOCKET HANDLER
@@ -109,7 +123,7 @@ function displayGmDialog(){
   };
   new Dialog({
     title: game.i18n.localize("READYCHECK.GmDialogTitle"),
-    content: game.i18n.localize("READYCHECK.GmDialogContent"),
+    content: `<p>${game.i18n.localize("READYCHECK.GmDialogContent")}</p>`,
     buttons: buttons,
     default: "check"
   }).render(true);
@@ -144,7 +158,7 @@ function displayStatusUpdateDialog(){
 
   new Dialog({
     title: game.i18n.localize("READYCHECK.DialogTitleStatusUpdate"),
-    content: game.i18n.localize("READYCHECK.DialogContentStatusUpdate"),
+    content: `<p>${game.i18n.localize("READYCHECK.DialogContentStatusUpdate")}</p>`,
     buttons: buttons,
     default: "yes"
   }).render(true);
@@ -162,7 +176,7 @@ function displayReadyCheckDialog(){
 
   new Dialog({
     title: game.i18n.localize("READYCHECK.DialogTitleReadyCheck"),
-    content: game.i18n.localize("READYCHECK.DialogContentReadyCheck"),
+    content: `<p>${game.i18n.localize("READYCHECK.DialogContentReadyCheck")}</p>`,
     buttons: buttons,
     default: "yes"
   }).render(true);
@@ -228,10 +242,10 @@ async function updatePlayersWindow(){
 
     if(ready){
       title = game.i18n.localize("READYCHECK.PlayerReady");
-      indicator = `<i class="fas fa-check ready-indicator ready" title="` + title + `"></i>`;
+      indicator = `<i class="fas fa-check crash-ready-indicator ready" title="` + title + `"></i>`;
     } else {
       title = game.i18n.localize("READYCHECK.PlayerNotReady");
-      indicator = `<i class="fas fa-times ready-indicator not-ready" title="` + title + `"></i>`;
+      indicator = `<i class="fas fa-times crash-ready-indicator not-ready" title="` + title + `"></i>`;
     }
 
     $("#players").find("[data-user-id="+userId+"]").append(indicator);
