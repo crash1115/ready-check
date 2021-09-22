@@ -1,24 +1,36 @@
 {
-	"name": "ready-check",
-	"title": "Ready Set Go! - A Ready Check Module",
-	"description": "Allows the GM to initiate a ready check, displaying a dialog on each player's screen that prompts them to indicate when they're ready. Also gives players the ability to change their ready status at any time via a button near the chat input.",
-	"version": "1.2.2",
-	"author": "CRASH1115#2944",
-	"minimumCoreVersion": "0.8.2",
-	"compatibleCoreVersion": "0.8.4",
-	"esmodules": ["ready-check.js"],
-	"styles": ["styles/ready-check.css"],
-	"languages": [
-		{
-			"lang": "en",
-			"name": "English",
-			"path": "lang/en.json"
-		}
-	],
-	"socket": true,
-	"url": "https://github.com/crash1115/ready-check",
+  "name": "ready-check",
+  "title": "Ready Set Go! - A Ready Check Module",
+  "description": "Allows the GM to initiate a ready check, displaying a dialog on each player's screen that prompts them to indicate when they're ready. Also gives players the ability to change their ready status at any time via a button near the chat input.",
+  "author": "CRASH1115#2944",
+  "authors": [],
+  "url": "https://github.com/crash1115/ready-check",
+  "readme": "https://github.com//crash1115/ready-check/blob/master/README.md",
+  "bugs": "https://github.com/crash1115/ready-check/issues",
+  "flags": {},
+  "version": "1.2.3",
+  "minimumCoreVersion": "0.8.2",
+  "compatibleCoreVersion": "0.8.9",
+  "scripts": [],
+  "esmodules": [
+    "ready-check.js"
+  ],
+  "styles": [
+    "styles/ready-check.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [],
+  "system": [],
+  "dependencies": [],
+  "socket": true,
   "manifest": "https://raw.githubusercontent.com/crash1115/ready-check/main/module.json",
-	"download": "https://github.com/crash1115/ready-check/releases/download/v1.2.2/ready-check.zip",
-	"readme": "https://github.com//crash1115/ready-check/blob/master/README.md",
-	"bugs": "https://github.com/crash1115/ready-check/issues"
+  "download": "https://github.com/crash1115/ready-check/releases/download/v1.2.3/ready-check.zip",
+  "protected": false,
+  "coreTranslation": false
 }

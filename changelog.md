@@ -1,3 +1,6 @@
+# Version 1.2.3
+- Fixed an issue where some readiness indicators would display twice
+
 # Version 1.2.2
 - Fixed an issue where the UI button would duplicate when popping out the chat tab
 - Style tweaks
