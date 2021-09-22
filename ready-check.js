@@ -238,16 +238,30 @@ async function updatePlayersWindow(){
     let ready = await game.users.contents[i].getFlag('ready-check','isReady');
     let userId = game.users.contents[i].data._id;
     let userName = game.users.contents[i].data.name;
-    let title, indicator;
+    let indicator = $("#players").find("[data-user-id="+userId+"] .crash-ready-indicator").length > 0;
+    let title, classToAdd, classToRemove, iconClassToAdd, iconClassToRemove;
 
     if(ready){
       title = game.i18n.localize("READYCHECK.PlayerReady");
-      indicator = `<i class="fas fa-check crash-ready-indicator ready" title="` + title + `"></i>`;
+      classToAdd = "ready";
+      classToRemove = "not-ready";
+      iconClassToAdd = "fa-check";
+      iconClassToRemove = "fa-times";
     } else {
       title = game.i18n.localize("READYCHECK.PlayerNotReady");
-      indicator = `<i class="fas fa-times crash-ready-indicator not-ready" title="` + title + `"></i>`;
+      classToAdd = "not-ready";
+      classToRemove = "ready";
+      iconClassToAdd = "fa-times";
+      iconClassToRemove = "fa-check";
     }
 
-    $("#players").find("[data-user-id="+userId+"]").append(indicator);
+    if(indicator){
+      $(indicator).removeClass(classToRemove);
+      $(indicator).removeClass(iconClassToRemove);
+      $(indicator).addClass(classToAdd);
+      $(indicator).addClass(iconClassToAdd);
+    } else {
+      $("#players").find("[data-user-id="+userId+"]").append(`<i class="fas ${iconClassToAdd} crash-ready-indicator ${classToAdd}" title="${title}"></i>`);
+    }
   }
 }
