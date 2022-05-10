@@ -43,7 +43,7 @@ You can use this toggle to help your group see when you have to step away to tak
 5. Click Install
 
 # Got Questions?
-Contact me on Discord (CRASH1115#2944).
+That's rough, buddy. I'm no longer maintaining this module. Check out the notice at the top for its new home and owner!
 
 # License
 - This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/legalcode).
