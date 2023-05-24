@@ -1,3 +1,6 @@
+## No Longer Being Maintained
+Due to time constraints, I'm no longer able to keep updating this module with any amount of frequency. You're welcome to keep using it; there's a decent chance that it'll get updated from time to time because my group uses it, but I won't be keeping up with feature requests or non-critical bug reports at the level that'd be expected for something actively being maintained. Thanks for sticking with me on this wild ride, it's been a lot of fun!
+
 ![GitHub All Releases](https://img.shields.io/github/downloads/crash1115/ready-check/total) ![GitHub Releases](https://img.shields.io/github/downloads/crash1115/ready-check/latest/total) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/crash1115/ready-check?label=latest%20version)
 
 Ready Set Go! is a system agnostic module for Foundry VTT designed to help GM's and players communicate when they're ready to play. GM's are given the option to initiate ready checks, and both GM's and players can indicate that they're ready (or not) at any time.
@@ -41,5 +44,4 @@ You can use this toggle to help your group see when you have to step away to tak
 Contact me on Discord (CRASH1115#2944).
 
 # License
-- This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/legalcode).
 - This work is licensed under the [Foundry Virtual Tabletop EULA - Limited License Agreement for Module Development](https://foundryvtt.com/article/license/).
