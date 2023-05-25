@@ -144,7 +144,7 @@ async function initReadyCheck(){
 
 // DISPLAY STATUS UPDATE DIALOG AND SEND RESPONSE TO GM
 function displayStatusUpdateDialog(){
-  let data = {action: 'update', ready: false, userId: game.user.data._id};
+  let data = {action: 'update', ready: false, userId: game.user._id};
   let buttons = {
     yes: {icon: "<i class='fas fa-check'></i>",
           label: game.i18n.localize("READYCHECK.StatusReady"),
@@ -166,7 +166,7 @@ function displayStatusUpdateDialog(){
 
 // DISPLAY READY CHECK DIALOG AND SEND RESPONSE TO GM (PLAYER)
 function displayReadyCheckDialog(){
-  let data = {action: 'update', ready: false, userId: game.user.data._id};
+  let data = {action: 'update', ready: false, userId: game.user._id};
   let buttons = {
     yes: {icon: "<i class='fas fa-check'></i>",
           label: game.i18n.localize("READYCHECK.StatusReady"),
@@ -205,7 +205,7 @@ async function processReadyResponse(data){
 // DISPLAY A CHAT MESSAGE WHEN A USER RESPONDS TO A READY CHECK
 function displayReadyCheckChatMessage(data){
   if(game.settings.get("ready-check", "showChatMessagesForChecks")){
-    let username = game.users.get(data.userId).data.name;
+    let username = game.users.get(data.userId).name;
     let content = `${username} ${game.i18n.localize("READYCHECK.ChatTextCheck")}`;
     ChatMessage.create({speaker:{alias: "Ready Set Go!"}, content: content});
   }
@@ -214,7 +214,7 @@ function displayReadyCheckChatMessage(data){
 // DISPLAY A CHAT MESSAGE WHEN A USER UPDATES THEIR STATUS
 function displayStatusUpdateChatMessage(data){
   if(game.settings.get("ready-check", "showChatMessagesForUserUpdates")){
-    let username = game.users.get(data.userId).data.name;
+    let username = game.users.get(data.userId).name;
     let status = data.ready ? game.i18n.localize("READYCHECK.StatusReady") : game.i18n.localize("READYCHECK.StatusNotReady");
     let content = `${username} ${game.i18n.localize("READYCHECK.ChatTextUserUpdate")} ${status}`;
     ChatMessage.create({speaker:{alias: "Ready Set Go!"}, content: content});
@@ -236,8 +236,8 @@ function playReadyCheckAlert(){
 async function updatePlayersWindow(){
   for(var i=0; i < game.users.contents.length; i++){
     let ready = await game.users.contents[i].getFlag('ready-check','isReady');
-    let userId = game.users.contents[i].data._id;
-    let userName = game.users.contents[i].data.name;
+    let userId = game.users.contents[i]._id;
+    let userName = game.users.contents[i].name;
     let indicator = $("#players").find("[data-user-id="+userId+"] .crash-ready-indicator").length > 0;
     let title, classToAdd, classToRemove, iconClassToAdd, iconClassToRemove;
 

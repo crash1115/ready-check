@@ -1,3 +1,7 @@
+# Version 1.2.4
+- Compatibility with Foundry v10 and v11
+- Updated license. Previous versions of this module were released under CC, which wasn't really appropriate. Now we're using MIT. Have fun.
+
 # Version 1.2.3
 - Fixed an issue where some readiness indicators would display twice
 

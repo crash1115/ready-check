@@ -46,5 +46,4 @@ You can use this toggle to help your group see when you have to step away to tak
 That's rough, buddy. I'm no longer maintaining this module. Check out the notice at the top for its new home and owner!
 
 # License
-- This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/legalcode).
 - This work is licensed under the [Foundry Virtual Tabletop EULA - Limited License Agreement for Module Development](https://foundryvtt.com/article/license/).
