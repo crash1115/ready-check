@@ -1,5 +1,7 @@
-## No Longer Being Maintained
-Due to time constraints, I'm no longer able to keep updating this module with any amount of frequency. You're welcome to keep using it; there's a decent chance that it'll get updated from time to time because my group uses it, but I won't be keeping up with feature requests or non-critical bug reports at the level that'd be expected for something actively being maintained. Thanks for sticking with me on this wild ride, it's been a lot of fun!
+# DEPRECATION WARNING
+Hey there, I'm no longer maintaining this module. TheMasterGeese has created a spin-off version you can find [here](https://github.com/TheMasterGeese/mg-ready-check). Check that one out if you want something being actively developed. Thank you!
+
+# About Ready Set Go!
 
 ![GitHub All Releases](https://img.shields.io/github/downloads/crash1115/ready-check/total) ![GitHub Releases](https://img.shields.io/github/downloads/crash1115/ready-check/latest/total) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/crash1115/ready-check?label=latest%20version)
 
@@ -41,7 +43,7 @@ You can use this toggle to help your group see when you have to step away to tak
 5. Click Install
 
 # Got Questions?
-Contact me on Discord (CRASH1115#2944).
+That's rough, buddy. I'm no longer maintaining this module. Check out the notice at the top for its new home and owner!
 
 # License
 - This work is licensed under the [Foundry Virtual Tabletop EULA - Limited License Agreement for Module Development](https://foundryvtt.com/article/license/).
